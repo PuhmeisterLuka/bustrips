@@ -152,8 +152,6 @@ S tem testom sem med razvojem našel napako v testnih podatkih: isto postajo sem
 
 ## Uporaba AI
 
-## Uporaba AI
-
 Pri nalogi sem uporabljal Claude Code.
 
 Vrstni red branja sem določil sam: najprej `stop_times.txt`, v istem prehodu pa
