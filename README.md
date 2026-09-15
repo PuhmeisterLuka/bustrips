@@ -149,3 +149,18 @@ S tem testom sem med razvojem našel napako v testnih podatkih: isto postajo sem
 - Cela postaja. Perone bi združil prek `parent_station` in izpisal, na katerem avtobus ustavi.
 - Realni čas. GTFS Realtime doda zamude in odpovedi.
 - Strežnik. Pri sto poizvedbah na sekundo bi ponovno branje datotek postalo predrago, zato bi zgradil indeks po postaji in času. Tam bi izbira med `Duration` in `int` vplivala na porabo pomnilnika.
+
+## Uporaba AI
+
+## Uporaba AI
+
+Pri nalogi sem uporabljal Claude Code.
+
+Vrstni red branja sem določil sam: najprej `stop_times.txt`, v istem prehodu pa
+filtriram po postaji in času. Okno čez polnoč sem razdelil na servisne dneve, za
+čase izbral `Duration`, za rezultat `List`, dodal referenčni čas in izbral obliko
+izpisa. Claude je predlagal iskanje po `stop_code`, pogled na prejšnji servisni
+dan in primerjavo polj na mestu. Te predloge sem sprejel.
+
+C# poznam, Jave manj, zato je kodo in teste v Javi napisal Claude. Kodo sem
+pregledoval in poganjal, refaktoriranje po dobrih praksah sem tudi opravil sam.
