@@ -1,0 +1,3 @@
+stop_id,stop_code,stop_name,stop_lat,stop_lon
+1,1001,Central Station,46.05,14.51
+2,1002,Museum,46.06,14.52
